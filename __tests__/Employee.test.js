@@ -1,6 +1,6 @@
 const Employee = require('../lib/Employee');
-const id = 1
 const name = 'Test'
+const id = 1
 const email = 'test@test.com'
 
 
