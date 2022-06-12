@@ -1,3 +1,4 @@
+//sets up the manager card
 const generateManager = teamArr => {
     return teamArr
         .filter(({ officeNumber }) => officeNumber)
@@ -18,6 +19,8 @@ const generateManager = teamArr => {
         })
         .join('')
 }
+
+//sets up the engineer card
 const generateEngineer = teamArr => {
     return teamArr
         .filter(({ github }) => github)
@@ -38,12 +41,12 @@ const generateEngineer = teamArr => {
         })
         .join('')
 }
-const generateIntern = teamArr => {
 
+//sets up the intern card
+const generateIntern = teamArr => {
     return teamArr
         .filter(({ school }) => school)
         .map(({ name, id, email, school, getRole }) => {
-
             return `
             <div class="card">
                 <div class="card-header">
@@ -61,6 +64,8 @@ const generateIntern = teamArr => {
         .join('')
     
 }
+
+//exports the HTML with the newly generated cards utilizing bootstrap for easy config
 module.exports = templateData => {
 
     return `

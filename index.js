@@ -5,6 +5,8 @@ const generateTeam = require('./util/html-template');
 const writeFile = require('./util/generate-page')
 const teamArr = [];
 
+
+const initializeApp = function(){
 inquirer
     .prompt([
 
@@ -48,3 +50,6 @@ inquirer
             
         }
     })
+}
+
+initializeApp();

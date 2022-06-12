@@ -4,6 +4,8 @@ const Intern = require('../lib/Intern')
 const generateTeam = require('./html-template')
 const writeFile = require('./generate-page')
 
+
+//exports the engineer adding capabilities
 module.exports.addEngineer = (arr) => {
     inquirer
         .prompt([
@@ -36,6 +38,7 @@ module.exports.addEngineer = (arr) => {
                 choices: ['Add Engineer', 'Add Intern', 'Finish']
             }
         ])
+        //once all prompts happen, add to array then figure out what to do next
         .then(({ name, id, email, github, action }) => {
             const engineer = new Engineer(name, id, email, github);
             arr.push(engineer);
