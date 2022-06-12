@@ -1,4 +1,6 @@
 const Engineer = require('../lib/Engineer');
+
+//sets up mock info
 const name = 'test'
 const id = 1
 const email = 'test@test.com'

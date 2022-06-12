@@ -12,7 +12,7 @@ test('give properties value of input', () => {
     expect(intern.id).toBe(id);
     expect(intern.email).toBe(email);
     expect(intern.school).toBe(school);
-    })
+    });
 
 test('return value of this.school property', () => {
     const intern = new Intern(name, id, email, school);
@@ -22,4 +22,4 @@ test('return value of this.school property', () => {
 test(`return the role of the employee as 'Intern'`, () => {
     const intern = new Intern(name, id, email, school);
     expect(intern.getRole()).toBe('Intern');
-})
+});
