@@ -53,7 +53,7 @@ const generateIntern = teamArr => {
                     <h2>${name}</h2>
                     <h3>${getRole()}</h3>
                 </div>
-                <ul class="list-group list-group-flush">
+                <ul class="list-group">
                     <li class="list-group-item">ID: ${id}</li>
                     <li class="list-group-item">Email: <a href="mailto:${email}">${email}</a></li>
                     <li class="list-group-item">School: ${school}</li>
