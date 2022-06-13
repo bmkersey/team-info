@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const Manager = require('./lib/Manager');
-const { addEngineer, addIntern} = require('./util/addEmployee')
+const {addEngineer, addIntern} = require('./util/addEmployee')
 const generateTeam = require('./util/html-template');
 const writeFile = require('./util/generate-page')
 const teamArr = [];
@@ -37,7 +37,7 @@ inquirer
             choices: ['Add Engineer', 'Add Intern', 'Finish']
         }
     ])
-    .then(({ name, id, email, office, action }) => {
+    .then(({name, id, email, office, action}) => {
         const manager = new Manager(name, id, email, office);
         teamArr.push(manager);
         if (action === 'Add Engineer') {
